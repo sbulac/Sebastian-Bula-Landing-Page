@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from './Button'
 import Link from 'next/link';
-import contact from '@/pages/contact';
+import Image from 'next/image'
 
 const Cabecera = () => {
 
@@ -27,7 +27,7 @@ const Cabecera = () => {
                     </Link>
                 </div>
                 <Button className='xl:hidden' onClick={handleClick}>
-                    <img src='./icon-menu.svg' className='w-8 h-8' />
+                    <Image src='/icon-menu.svg' alt='menu' width={32} height={32}/>
                 </Button>
             </div>
             <div className={layout ? unviewinfo : viewinfo}>
