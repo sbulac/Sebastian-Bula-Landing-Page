@@ -1,12 +1,13 @@
-import Cabecera from '../components/Header'
-import Section from '../components/Section'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Section from '@/components/Section'
 import Image from 'next/image'
 
 
 export default function Home() {
   return (
     <>
-      <Cabecera />
+      <Header />
       <Section className='w-full h-auto bg-zinc-400 flex flex-col p-4 space-y-4 justify-between xl:p-24 xl:flex-row xl:px-40 '>
         <Image src='/Sebastian-Bula.jpeg' width={800} height={800} alt='Sebastian Bula' className='block rounded-full border-8 xl:hidden' />
         <div className='space-y-4 flex flex-col justify-center text-center'>
@@ -45,6 +46,7 @@ export default function Home() {
           <Image src='/next.svg' width={100} height={100} alt='next logo' />
         </div>
       </Section>
+      <Footer />
     </>
   )
 }

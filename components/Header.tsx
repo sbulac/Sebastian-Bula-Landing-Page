@@ -3,11 +3,11 @@ import Button from './Button'
 import Link from 'next/link';
 import Image from 'next/image'
 
-const Cabecera = () => {
+const Header = () => {
 
     const unviewlayout = 'w-full h-auto bg-zinc-800 p-4 flex justify-between items-center'
     const viewlayout = 'w-full h-64 bg-zinc-800 p-4 flex flex-col justify-between'
-    const unviewinfo = 'hidden h-auto flex text-2xl text-zinc-200 justify-center items-center space-x-32 xl:block'
+    const unviewinfo = 'hidden h-auto xl:flex text-2xl text-zinc-200 justify-center items-center space-x-32 xl:block '
     const viewinfo = 'h-full flex flex-col text-2xl text-zinc-200 justify-around items-end'
 
     const [layout, setLayout] = useState(true)
@@ -32,11 +32,11 @@ const Cabecera = () => {
             </div>
             <div className={layout ? unviewinfo : viewinfo}>
                 <Link href={'/'}>Home</Link>
-                <Link href={'contact'}>Contact</Link>
+                <Link className='w-28' href={'aboutMe'}>About me</Link>
                 <Link href={'projects'}>Projects</Link>
             </div>
         </header>
     );
 }
 
-export default Cabecera
+export default Header

@@ -1,7 +1,7 @@
 import Cabecera from '@/components/Header'
 import React from 'react'
 
-const contact = () => {
+const aboutMe = () => {
   return (
     <div>
       <Cabecera />
@@ -10,4 +10,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default aboutMe
